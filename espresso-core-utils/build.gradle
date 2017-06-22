@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+afterEvaluate {
+  generateReleaseBuildConfig.enabled = false
+}
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion as int
+  buildToolsVersion rootProject.ext.buildToolsVersion as String
+
+  defaultConfig {
+    minSdkVersion rootProject.ext.minSdkVersion as int
+  }
+}
+
+dependencies {
+  compile deps.support.annotations
+  compile deps.support.appcompat
+
+  compile deps.support.test.espresso
+  compile deps.support.test.runner
+  compile deps.support.test.rules
+}
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+
+configurations.all {
+  resolutionStrategy {
+    force deps.support.annotations
+  }
+}
