@@ -12,6 +12,7 @@ Provides helper methods for asserting a few things that Espresso does not suppor
 
 ```groovy
 compile 'com.vanniktech:espresso-core-utils:0.1.0'
+compile 'com.vanniktech:espresso-core-utils:0.2.0-SNAPSHOT'
 ```
 
 Examples:
