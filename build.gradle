@@ -26,16 +26,14 @@ buildscript {
     mavenCentral()
     jcenter()
     google()
-    maven { url 'https://plugins.gradle.org/m2/' }
   }
 
   dependencies {
-    classpath 'com.vanniktech:gradle-code-quality-tools-plugin:0.7.0'
-    classpath 'com.vanniktech:gradle-android-junit-jacoco-plugin:0.6.0'
+    classpath 'com.vanniktech:gradle-code-quality-tools-plugin:0.8.0'
+    classpath 'com.vanniktech:gradle-android-junit-jacoco-plugin:0.8.0'
 
     classpath 'com.android.tools.build:gradle:2.3.3'
     classpath 'com.github.ben-manes:gradle-versions-plugin:0.15.0'
-    classpath 'net.ltgt.gradle:gradle-errorprone-plugin:0.0.10'
   }
 }
 
@@ -53,7 +51,7 @@ codeQualityTools {
     toolVersion = '0.9.1'
   }
   detekt {
-    toolVersion = '1.0.0.M13.2'
+    toolVersion = '1.0.0.RC2'
   }
   errorProne {
     toolVersion = '2.0.21'
@@ -68,19 +66,13 @@ subprojects {
 
   group = GROUP
   version = VERSION_NAME
-
-  plugins.apply('net.ltgt.errorprone')
-
-  configurations.errorprone {
-    resolutionStrategy.force 'com.google.errorprone:error_prone_core:2.0.20'
-  }
 }
 
 ext {
   minSdkVersion = 15
   compileSdkVersion = 26
   targetSdkVersion = 26
-  buildToolsVersion = '26.0.0'
+  buildToolsVersion = '26.0.1'
 
   versionCode = VERSION_CODE
   versionName = VERSION_NAME
