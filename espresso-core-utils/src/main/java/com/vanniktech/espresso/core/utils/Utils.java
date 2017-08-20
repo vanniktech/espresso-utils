@@ -37,12 +37,6 @@ final class Utils {
     }
 
     final Context context = view.getContext();
-    final Drawable expectedDrawable = ContextCompat.getDrawable(context, expectedId);
-
-    if (expectedDrawable == null) {
-      return false;
-    }
-
     return isVisible && checkNotNull(drawable.getConstantState(), "constantState == null").equals(ContextCompat.getDrawable(context, expectedId).getConstantState());
   }
 
