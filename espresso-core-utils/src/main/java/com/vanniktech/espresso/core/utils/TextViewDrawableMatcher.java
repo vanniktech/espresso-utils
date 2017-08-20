@@ -9,7 +9,6 @@ import android.support.test.espresso.matcher.BoundedMatcher;
 import android.view.View;
 import android.widget.TextView;
 import org.hamcrest.Description;
-import org.hamcrest.Matcher;
 
 import static android.os.Build.VERSION_CODES.JELLY_BEAN_MR1;
 import static com.vanniktech.espresso.core.utils.Utils.NO_DRAWABLE;
@@ -25,67 +24,67 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
   private static final int DRAWABLE_BOTTOM = 3;
   private static final int DRAWABLE_RELATIVE_BOTTOM = 7;
 
-  @CheckResult public static Matcher<View> withTextViewDrawableLeft(@DrawableRes final int resourceId) {
+  @CheckResult public static TextViewDrawableMatcher withTextViewDrawableLeft(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_LEFT);
   }
 
-  @CheckResult public static Matcher<View> withNoTextViewDrawableLeft() {
+  @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableLeft() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_LEFT);
   }
 
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static Matcher<View> withTextViewDrawableRelativeLeft(@DrawableRes final int resourceId) {
+  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeLeft(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_LEFT);
   }
 
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static Matcher<View> withNoTextViewDrawableRelativeLeft() {
+  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeLeft() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_LEFT);
   }
 
-  @CheckResult public static Matcher<View> withTextViewDrawableTop(@DrawableRes final int resourceId) {
+  @CheckResult public static TextViewDrawableMatcher withTextViewDrawableTop(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_TOP);
   }
 
-  @CheckResult public static Matcher<View> withNoTextViewDrawableTop() {
+  @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableTop() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_TOP);
   }
 
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static Matcher<View> withTextViewDrawableRelativeTop(@DrawableRes final int resourceId) {
+  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeTop(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_TOP);
   }
 
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static Matcher<View> withNoTextViewDrawableRelativeTop() {
+  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeTop() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_TOP);
   }
 
-  @CheckResult public static Matcher<View> withTextViewDrawableRight(@DrawableRes final int resourceId) {
+  @CheckResult public static TextViewDrawableMatcher withTextViewDrawableRight(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RIGHT);
   }
 
-  @CheckResult public static Matcher<View> withNoTextViewDrawableRight() {
+  @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableRight() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RIGHT);
   }
 
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static Matcher<View> withTextViewDrawableRelativeRight(@DrawableRes final int resourceId) {
+  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeRight(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_RIGHT);
   }
 
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static Matcher<View> withNoTextViewDrawableRelativeRight() {
+  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeRight() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_RIGHT);
   }
 
-  @CheckResult public static Matcher<View> withTextViewDrawableBottom(@DrawableRes final int resourceId) {
+  @CheckResult public static TextViewDrawableMatcher withTextViewDrawableBottom(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_BOTTOM);
   }
 
-  @CheckResult public static Matcher<View> withNoTextViewDrawableBottom() {
+  @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableBottom() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_BOTTOM);
   }
 
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static Matcher<View> withTextViewDrawableRelativeBottom(@DrawableRes final int resourceId) {
+  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeBottom(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_BOTTOM);
   }
 
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static Matcher<View> withNoTextViewDrawableRelativeBottom() {
+  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeBottom() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_BOTTOM);
   }
 

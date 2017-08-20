@@ -7,17 +7,16 @@ import android.support.test.espresso.matcher.BoundedMatcher;
 import android.view.View;
 import android.widget.ImageView;
 import org.hamcrest.Description;
-import org.hamcrest.Matcher;
 
 import static com.vanniktech.espresso.core.utils.Utils.NO_DRAWABLE;
 import static com.vanniktech.espresso.core.utils.Utils.drawableMatches;
 
 public final class DrawableMatcher extends BoundedMatcher<View, ImageView> {
-  @CheckResult public static Matcher<View> withDrawable(@DrawableRes final int resourceId) {
+  @CheckResult public static DrawableMatcher withDrawable(@DrawableRes final int resourceId) {
     return new DrawableMatcher(resourceId);
   }
 
-  @CheckResult public static Matcher<View> withNoDrawable() {
+  @CheckResult public static DrawableMatcher withNoDrawable() {
     return new DrawableMatcher(NO_DRAWABLE);
   }
 
