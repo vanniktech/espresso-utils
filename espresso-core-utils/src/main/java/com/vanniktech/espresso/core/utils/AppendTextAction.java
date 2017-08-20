@@ -4,7 +4,7 @@ import android.support.annotation.CheckResult;
 import android.support.test.espresso.UiController;
 import android.support.test.espresso.ViewAction;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.TextView;
 import org.hamcrest.Matcher;
 
 import static android.support.test.espresso.action.ViewActions.actionWithAssertions;
@@ -12,7 +12,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.isAssignableFro
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static org.hamcrest.core.AllOf.allOf;
 
-final class AppendTextAction implements ViewAction {
+public final class AppendTextAction implements ViewAction {
   @CheckResult static ViewAction appendText(final String text) {
     return actionWithAssertions(new AppendTextAction(text));
   }
@@ -23,15 +23,15 @@ final class AppendTextAction implements ViewAction {
     this.text = text;
   }
 
-  @SuppressWarnings("unchecked") @Override public Matcher<View> getConstraints() {
-    return allOf(isDisplayed(), isAssignableFrom(EditText.class));
+  @Override public Matcher<View> getConstraints() {
+    return allOf(isDisplayed(), isAssignableFrom(TextView.class));
   }
 
   @Override public void perform(final UiController uiController, final View view) {
-    ((EditText) view).append(text);
+    ((TextView) view).append(text);
   }
 
   @Override public String getDescription() {
-    return "append text";
+    return "append text: " + text;
   }
 }
