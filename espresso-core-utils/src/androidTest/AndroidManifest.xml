@@ -12,5 +12,6 @@
     <activity android:name=".DrawableMatcherActivity"/>
     <activity android:name=".AttributeMatcherActivity"
         android:theme="@style/AttributeMatcher"/>
+    <activity android:name=".TextViewDrawableMatcherActivity"/>
   </application>
 </manifest>

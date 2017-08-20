@@ -10,6 +10,7 @@ android {
 
   defaultConfig {
     minSdkVersion rootProject.ext.minSdkVersion as int
+    targetSdkVersion rootProject.ext.targetSdkVersion // Needed for Integration Tests.
 
     testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
   }
