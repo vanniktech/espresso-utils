@@ -35,7 +35,10 @@ public final class DrawableMatcher extends BoundedMatcher<View, ImageView> {
   }
 
   @Override public void describeTo(final Description description) {
-    description.appendText("with drawable from resource id: ")
-        .appendValue(expectedId);
+    if (expectedId == NO_DRAWABLE) {
+      description.appendText("with no drawable");
+    } else {
+      description.appendText("with drawable from resource id: ").appendValue(expectedId);
+    }
   }
 }
