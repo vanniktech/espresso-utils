@@ -9,5 +9,6 @@
     <activity android:name=".AppendTextActionActivity"/>
     <activity android:name=".CurrentItemMatcherActivity"/>
     <activity android:name=".HintTextColorMatcherActivity"/>
+    <activity android:name=".DrawableMatcherActivity"/>
   </application>
 </manifest>
