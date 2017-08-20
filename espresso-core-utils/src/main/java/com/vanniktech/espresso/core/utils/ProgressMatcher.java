@@ -24,6 +24,6 @@ public final class ProgressMatcher extends BoundedMatcher<View, ProgressBar> {
   }
 
   @Override public void describeTo(final Description description) {
-    description.appendText("has progress ").appendValue(progress);
+    description.appendText("has progress: ").appendValue(progress);
   }
 }
