@@ -24,6 +24,6 @@ public final class CurrentItemMatcher extends BoundedMatcher<View, ViewPager> {
   }
 
   @Override public void describeTo(final Description description) {
-    description.appendText("has currentItem ").appendValue(currentItem);
+    description.appendText("has currentItem: ").appendValue(currentItem);
   }
 }

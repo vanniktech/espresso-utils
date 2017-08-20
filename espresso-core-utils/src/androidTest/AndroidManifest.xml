@@ -7,5 +7,6 @@
     <activity android:name=".TextColorMatcherActivity"/>
     <activity android:name=".ProgressMatcherActivity"/>
     <activity android:name=".AppendTextActionActivity"/>
+    <activity android:name=".CurrentItemMatcherActivity"/>
   </application>
 </manifest>
