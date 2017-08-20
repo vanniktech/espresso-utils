@@ -150,9 +150,15 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
   }
 
   @Override public void describeTo(final Description description) {
-    description.appendText("with drawable ")
-        .appendText(identifierAsString())
-        .appendText(" from resource id: ")
-        .appendValue(expectedId);
+    if (expectedId == NO_DRAWABLE) {
+      description.appendText("with no ")
+          .appendText(identifierAsString())
+          .appendText(" drawable");
+    } else {
+      description.appendText("with ")
+          .appendText(identifierAsString())
+          .appendText(" drawable from resource id: ")
+          .appendValue(expectedId);
+    }
   }
 }
