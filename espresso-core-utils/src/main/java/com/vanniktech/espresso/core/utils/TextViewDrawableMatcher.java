@@ -5,17 +5,17 @@ import android.annotation.TargetApi;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.CheckResult;
 import android.support.annotation.DrawableRes;
+import android.support.test.espresso.matcher.BoundedMatcher;
 import android.view.View;
 import android.widget.TextView;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
-import org.hamcrest.TypeSafeMatcher;
 
 import static android.os.Build.VERSION_CODES.JELLY_BEAN_MR1;
 import static com.vanniktech.espresso.core.utils.Utils.NO_DRAWABLE;
 import static com.vanniktech.espresso.core.utils.Utils.drawableMatches;
 
-public final class TextViewDrawableMatcher extends TypeSafeMatcher<View> {
+public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView> {
   private static final int DRAWABLE_LEFT = 0;
   private static final int DRAWABLE_RELATIVE_LEFT = 4;
   private static final int DRAWABLE_TOP = 1;
@@ -93,18 +93,13 @@ public final class TextViewDrawableMatcher extends TypeSafeMatcher<View> {
   private final int identifier;
 
   private TextViewDrawableMatcher(final int expectedId, final int identifier) {
-    super(View.class);
+    super(TextView.class);
 
     this.expectedId = expectedId;
     this.identifier = identifier;
   }
 
-  @Override protected boolean matchesSafely(final View target) {
-    if (!(target instanceof TextView)) {
-      return false;
-    }
-
-    final TextView textView = (TextView) target;
+  @Override protected boolean matchesSafely(final TextView textView) {
     final Drawable drawable = getDrawable(textView);
     return drawableMatches(textView, drawable, expectedId);
   }

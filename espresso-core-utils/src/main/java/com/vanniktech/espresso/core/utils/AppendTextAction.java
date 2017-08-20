@@ -13,7 +13,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static org.hamcrest.core.AllOf.allOf;
 
 public final class AppendTextAction implements ViewAction {
-  @CheckResult static ViewAction appendText(final String text) {
+  @CheckResult public static ViewAction appendText(final String text) {
     return actionWithAssertions(new AppendTextAction(text));
   }
 
