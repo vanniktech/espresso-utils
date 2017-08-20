@@ -6,5 +6,6 @@
   <application tools:ignore="GoogleAppIndexingWarning">
     <activity android:name=".TextColorMatcherActivity"/>
     <activity android:name=".ProgressMatcherActivity"/>
+    <activity android:name=".AppendTextActionActivity"/>
   </application>
 </manifest>
