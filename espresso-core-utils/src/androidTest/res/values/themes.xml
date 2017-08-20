@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="AttributeMatcher" parent="Theme.AppCompat">
+    <item name="colorAccent">@color/green</item>
+    <item name="colorButtonNormal">@color/red</item>
+    <item name="colorError">@color/blue</item>
+  </style>
+</resources>

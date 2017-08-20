@@ -68,6 +68,8 @@ public final class AttributeMatcher extends BoundedMatcher<View, TextView> {
   }
 
   @Override public void describeTo(final Description description) {
-    description.appendText("with ").appendText(name != null ? name : String.valueOf(attr)).appendText(" : ");
+    description.appendText("with ")
+        .appendText(name != null ? name : String.valueOf(attr))
+        .appendText(": ");
   }
 }
