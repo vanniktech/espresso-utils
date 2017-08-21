@@ -29,6 +29,10 @@ dependencies {
   compile deps.support.test.espresso
   compile deps.support.test.runner
   compile deps.support.test.rules
+
+  testCompile deps.test.junit
+  testCompile deps.test.assertj3
+  testCompile deps.test.privateconstructor
 }
 
 apply from: rootProject.file('gradle/gradle-mvn-push.gradle')

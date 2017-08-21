@@ -20,6 +20,11 @@ buildscript {
         'rules': "com.android.support.test:rules:${versions.testRules}",
       ],
     ],
+    'test': [
+      'privateconstructor': 'com.pushtorefresh.java-private-constructor-checker:checker:1.2.0',
+      'junit': 'junit:junit:4.12',
+      'assertj3': 'org.assertj:assertj-core:3.8.0',
+    ],
   ]
 
   repositories {
