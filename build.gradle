@@ -5,8 +5,8 @@ apply plugin: 'com.vanniktech.android.junit.jacoco'
 buildscript {
   ext.versions = [
     supportLibrary: '26.0.1',
-    testRules: '1.0.0',
-    espresso: '3.0.0',
+    testRules: '1.0.1',
+    espresso: '3.0.1',
   ]
 
   ext.deps = [
@@ -47,16 +47,16 @@ codeQualityTools {
     textReport = true
   }
   checkstyle {
-    toolVersion = '8.1'
+    toolVersion = '8.2'
   }
   pmd {
     toolVersion = '5.8.1'
   }
   ktlint {
-    toolVersion = '0.9.1'
+    toolVersion = '0.9.2'
   }
   detekt {
-    toolVersion = '1.0.0.RC2'
+    toolVersion = '1.0.0.RC4-3'
   }
   errorProne {
     toolVersion = '2.0.21'
@@ -65,6 +65,7 @@ codeQualityTools {
 
 subprojects {
   repositories {
+    mavenCentral()
     jcenter()
     google()
   }
