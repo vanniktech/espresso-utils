@@ -14,6 +14,10 @@ import static android.view.View.VISIBLE;
 
 final class Utils {
   static final int NO_DRAWABLE = -1;
+  static final int INDEX_LEFT = 0;
+  static final int INDEX_TOP = 1;
+  static final int INDEX_RIGHT = 2;
+  static final int INDEX_BOTTOM = 3;
 
   static int resolveAttribute(final View view, @AttrRes final int attr) {
     final TypedValue value = new TypedValue();

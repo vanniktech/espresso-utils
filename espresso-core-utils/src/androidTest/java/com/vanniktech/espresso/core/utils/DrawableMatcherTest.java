@@ -13,6 +13,7 @@ import org.junit.runner.RunWith;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.view.View.GONE;
 import static com.vanniktech.espresso.core.utils.DrawableMatcher.withDrawable;
 import static com.vanniktech.espresso.core.utils.DrawableMatcher.withNoDrawable;
 import static com.vanniktech.espresso.core.utils.DrawableMatcherActivity.VIEW_ID;
@@ -29,6 +30,23 @@ import static com.vanniktech.espresso.core.utils.DrawableMatcherActivity.VIEW_ID
   @Test public void withDrawableMatches() throws Throwable {
     setDrawable(R.drawable.android);
 
+    onView(withId(VIEW_ID)).check(matches(withDrawable(R.drawable.android)));
+  }
+
+  @Test public void withNoDrawableDoesNotMatchOnGone() throws Throwable {
+    setVisibility(GONE);
+
+    expectedException.expect(AssertionFailedError.class);
+    expectedException.expectMessage("'with no drawable' doesn't match the selected view.");
+    onView(withId(VIEW_ID)).check(matches(withNoDrawable()));
+  }
+
+  @Test public void withDrawableDoesNotMatchOnGone() throws Throwable {
+    setDrawable(R.drawable.android);
+    setVisibility(GONE);
+
+    expectedException.expect(AssertionFailedError.class);
+    expectedException.expectMessage("'with drawable from resource id: <" + R.drawable.android + ">' doesn't match the selected view.");
     onView(withId(VIEW_ID)).check(matches(withDrawable(R.drawable.android)));
   }
 
@@ -52,6 +70,15 @@ import static com.vanniktech.espresso.core.utils.DrawableMatcherActivity.VIEW_ID
     activityTestRule.runOnUiThread(new Runnable() {
       @Override public void run() {
         activityTestRule.getActivity().imageView.setImageResource(drawable);
+      }
+    });
+  }
+
+  // Has to be package private because of https://github.com/pmd/pmd/issues/613.
+  void setVisibility(final int visibility) throws Throwable {
+    activityTestRule.runOnUiThread(new Runnable() {
+      @Override public void run() {
+        activityTestRule.getActivity().imageView.setVisibility(visibility);
       }
     });
   }

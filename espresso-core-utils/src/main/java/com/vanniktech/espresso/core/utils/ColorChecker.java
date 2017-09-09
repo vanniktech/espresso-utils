@@ -7,6 +7,8 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 
+import static com.vanniktech.espresso.core.utils.Utils.checkNotNull;
+
 final class ColorChecker {
   @CheckResult static ColorChecker fromRes(@ColorRes final int colorRes) {
     final ColorChecker matcher = new ColorChecker();
@@ -29,10 +31,8 @@ final class ColorChecker {
   boolean matches(final int color, final Context context) {
     if (colorInt != null) {
       return color == colorInt;
-    } else if (colorRes != null) {
-      return color == ContextCompat.getColor(context, colorRes);
     }
 
-    throw new AssertionError();
+    return color == ContextCompat.getColor(context, checkNotNull(colorRes, "colorRes == null"));
   }
 }
