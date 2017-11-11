@@ -6,7 +6,6 @@ afterEvaluate {
 
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion as int
-  buildToolsVersion rootProject.ext.buildToolsVersion as String
 
   defaultConfig {
     minSdkVersion rootProject.ext.minSdkVersion as int
@@ -23,16 +22,14 @@ android {
 }
 
 dependencies {
-  compile deps.support.annotations
-  compile deps.support.appcompat
+  api deps.support.annotations
+  implementation deps.support.appcompat
 
-  compile deps.support.test.espresso
-  compile deps.support.test.runner
-  compile deps.support.test.rules
+  api deps.support.test.espresso
 
-  testCompile deps.test.junit
-  testCompile deps.test.assertj3
-  testCompile deps.test.privateconstructor
+  testImplementation deps.test.junit
+  testImplementation deps.test.assertj3
+  testImplementation deps.test.privateconstructor
 }
 
 apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
