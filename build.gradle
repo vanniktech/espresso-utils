@@ -44,7 +44,7 @@ codeQualityTools {
     textReport = true
   }
   checkstyle {
-    toolVersion = '8.4'
+    toolVersion = '8.5'
   }
   pmd {
     toolVersion = '5.8.1'
