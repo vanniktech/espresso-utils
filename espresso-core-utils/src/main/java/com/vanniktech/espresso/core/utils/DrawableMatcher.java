@@ -12,10 +12,22 @@ import static com.vanniktech.espresso.core.utils.Utils.NO_DRAWABLE;
 import static com.vanniktech.espresso.core.utils.Utils.drawableMatches;
 
 public final class DrawableMatcher extends BoundedMatcher<View, ImageView> {
+  /**
+   * Matches that the given view has the expected drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withDrawable(R.drawable.android)));</code>
+   */
   @CheckResult public static DrawableMatcher withDrawable(@DrawableRes final int resourceId) {
     return new DrawableMatcher(resourceId);
   }
 
+  /**
+   * Matches that the given view has no drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoDrawable()));</code>
+   */
   @CheckResult public static DrawableMatcher withNoDrawable() {
     return new DrawableMatcher(NO_DRAWABLE);
   }

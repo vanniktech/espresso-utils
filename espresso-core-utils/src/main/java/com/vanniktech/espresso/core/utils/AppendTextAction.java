@@ -13,6 +13,12 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static org.hamcrest.core.AllOf.allOf;
 
 public final class AppendTextAction implements ViewAction {
+  /**
+   * Appends the given text to a TextView.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).perform(appendText("Something"));</code>
+   */
   @CheckResult public static ViewAction appendText(final String text) {
     return actionWithAssertions(new AppendTextAction(text));
   }

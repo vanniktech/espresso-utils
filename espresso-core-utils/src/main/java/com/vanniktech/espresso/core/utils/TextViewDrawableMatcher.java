@@ -27,66 +27,162 @@ import static com.vanniktech.espresso.core.utils.Utils.NO_DRAWABLE;
 import static com.vanniktech.espresso.core.utils.Utils.drawableMatches;
 
 public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView> {
+  /**
+   * Matches that the given drawable is displayed as the left drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableLeft(R.color.blue)));</code>
+   */
   @CheckResult public static TextViewDrawableMatcher withTextViewDrawableLeft(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_LEFT);
   }
 
+  /**
+   * Matches that there is no left drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableLeft()));</code>
+   */
   @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableLeft() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_LEFT);
   }
 
+  /**
+   * Matches that the given drawable is displayed as the relative left drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRelativeLeft(R.color.blue)));</code>
+   */
   @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeLeft(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_LEFT);
   }
 
+  /**
+   * Matches that there is no relative left drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRelativeLeft()));</code>
+   */
   @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeLeft() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_LEFT);
   }
 
+  /**
+   * Matches that the given drawable is displayed as the top drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableTop(R.color.blue)));</code>
+   */
   @CheckResult public static TextViewDrawableMatcher withTextViewDrawableTop(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_TOP);
   }
 
+  /**
+   * Matches that there is no top drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableTop()));</code>
+   */
   @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableTop() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_TOP);
   }
 
+  /**
+   * Matches that the given drawable is displayed as the relative top drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRelativeTop(R.color.blue)));</code>
+   */
   @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeTop(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_TOP);
   }
 
+  /**
+   * Matches that there is no relative top drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRelativeTop()));</code>
+   */
   @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeTop() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_TOP);
   }
 
+  /**
+   * Matches that the given drawable is displayed as the right drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRight(R.color.blue)));</code>
+   */
   @CheckResult public static TextViewDrawableMatcher withTextViewDrawableRight(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RIGHT);
   }
 
+  /**
+   * Matches that there is no right drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRight()));</code>
+   */
   @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableRight() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RIGHT);
   }
 
+  /**
+   * Matches that the given drawable is displayed as the relative right drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRelativeRight(R.color.blue)));</code>
+   */
   @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeRight(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_RIGHT);
   }
 
+  /**
+   * Matches that there is no relative right drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRelativeRight()));</code>
+   */
   @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeRight() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_RIGHT);
   }
 
+  /**
+   * Matches that the given drawable is displayed as the bottom drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableBottom(R.color.blue)));</code>
+   */
   @CheckResult public static TextViewDrawableMatcher withTextViewDrawableBottom(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_BOTTOM);
   }
 
+  /**
+   * Matches that there is no bottom drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableBottom()));</code>
+   */
   @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableBottom() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_BOTTOM);
   }
 
+  /**
+   * Matches that the given drawable is displayed as the relative bottom drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRelativeBottom(R.color.blue)));</code>
+   */
   @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeBottom(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_BOTTOM);
   }
 
+  /**
+   * Matches that there is no relative bottom drawable.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRelativeBottom()));</code>
+   */
   @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeBottom() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_BOTTOM);
   }
