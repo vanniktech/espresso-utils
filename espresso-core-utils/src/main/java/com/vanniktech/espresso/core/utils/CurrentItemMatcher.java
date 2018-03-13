@@ -7,6 +7,12 @@ import android.view.View;
 import org.hamcrest.Description;
 
 public final class CurrentItemMatcher extends BoundedMatcher<View, ViewPager> {
+  /**
+   * Matches that the expected currentItem is being displayed.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withCurrentItem(0)));</code>
+   */
   @CheckResult public static CurrentItemMatcher withCurrentItem(final int currentItem) {
     return new CurrentItemMatcher(currentItem);
   }

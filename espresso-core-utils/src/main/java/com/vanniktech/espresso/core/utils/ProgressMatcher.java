@@ -7,6 +7,12 @@ import android.widget.ProgressBar;
 import org.hamcrest.Description;
 
 public final class ProgressMatcher extends BoundedMatcher<View, ProgressBar> {
+  /**
+   * Matches that the given progress is displayed.
+   *
+   * <p>Example usage:</p>
+   * <code>onView(withId(R.id.view)).check(matches(withProgress(2)));</code>
+   */
   @CheckResult public static ProgressMatcher withProgress(final int progress) {
     return new ProgressMatcher(progress);
   }

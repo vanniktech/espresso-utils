@@ -11,11 +11,34 @@ Provides helper methods for asserting a few things that Espresso does not suppor
 # Espresso Core Utils
 
 ```groovy
-compile 'com.vanniktech:espresso-core-utils:0.2.0'
-compile 'com.vanniktech:espresso-core-utils:0.3.0-SNAPSHOT'
+androidTestImplementation 'com.vanniktech:espresso-core-utils:0.2.0'
 ```
 
-Examples:
+### Snapshots
+
+```groovy
+repositories {
+  maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
+dependencies {
+  androidTestImplementation 'com.vanniktech:espresso-core-utils:0.3.0-SNAPSHOT'
+}
+```
+
+# APIs
+
+### ViewActions:
+
+All of those are ViewActions that can be placed inside the `perform` function. `onView(withId(R.id.view)).perform(...);`
+
+```java
+appendText(String text)
+```
+
+### ViewMatchers:
+
+All of those are ViewMatchers that can be placed inside the `matches` function. `onView(withId(R.id.view)).check(matches(...));`
 
 ```java
 withAttrRes(@AttrRes int attr, @ColorRes int colorRes)
@@ -54,6 +77,8 @@ withNoTextViewDrawableBottom()
 withTextViewDrawableRelativeBottom(@DrawableRes int resourceId)
 withNoTextViewDrawableRelativeBottom()
 ```
+
+There's more documentation available in the Javadoc. Also have a look at the [tests](espresso-core-utils/src/androidTest/java/com/vanniktech/espresso/core/utils) for further usages.
 
 # License
 
