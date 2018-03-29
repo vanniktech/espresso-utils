@@ -1,11 +1,6 @@
 Espresso Utils
 ==============
 
-[![Build Status](https://travis-ci.org/vanniktech/espresso-utils.svg?branch=master)](https://travis-ci.org/vanniktech/espresso-utils?branch=master)
-[![Codecov](https://codecov.io/github/vanniktech/espresso-utils/coverage.svg?branch=master)](https://codecov.io/github/vanniktech/espresso-utils?branch=master)
-[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
-
 Provides helper methods for asserting a few things that Espresso does not support out of the box.
 
 # Espresso Core Utils
