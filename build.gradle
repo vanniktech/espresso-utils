@@ -26,7 +26,6 @@ buildscript {
 
   repositories {
     mavenCentral()
-    jcenter()
     google()
     gradlePluginPortal()
   }
@@ -37,6 +36,7 @@ buildscript {
 
     classpath 'com.android.tools.build:gradle:3.0.1'
     classpath 'com.github.ben-manes:gradle-versions-plugin:0.17.0'
+    classpath 'com.vanniktech:gradle-maven-publish-plugin:0.1.0'
   }
 }
 
@@ -58,12 +58,8 @@ codeQualityTools {
 subprojects {
   repositories {
     mavenCentral()
-    jcenter()
     google()
   }
-
-  group = GROUP
-  version = VERSION_NAME
 }
 
 ext {
