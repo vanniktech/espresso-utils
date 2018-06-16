@@ -11,7 +11,7 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static com.vanniktech.espresso.core.utils.AppendTextAction.appendText;
-import static com.vanniktech.espresso.core.utils.ProgressMatcherActivity.VIEW_ID;
+import static com.vanniktech.espresso.core.utils.ProgressBarActivity.VIEW_ID;
 
 @RunWith(AndroidJUnit4.class) public final class AppendTextActionTest {
   @Rule public final ActivityTestRule<AppendTextActionActivity> activityTestRule = new ActivityTestRule<>(AppendTextActionActivity.class);

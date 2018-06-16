@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.ProgressBar;
 
-public final class ProgressMatcherActivity extends Activity {
+public final class ProgressBarActivity extends Activity {
   static final int VIEW_ID = 1234;
 
   @Override protected void onCreate(@Nullable final Bundle savedInstanceState) {
@@ -14,6 +14,7 @@ public final class ProgressMatcherActivity extends Activity {
     final ProgressBar progressBar = new ProgressBar(this, null, 0); // Explicit no defStyleAttr.
     //noinspection ResourceType
     progressBar.setId(VIEW_ID);
+    progressBar.setMax(100);
     progressBar.setProgress(1);
     setContentView(progressBar);
   }
