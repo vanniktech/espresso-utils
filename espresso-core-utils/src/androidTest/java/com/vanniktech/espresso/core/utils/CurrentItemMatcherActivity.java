@@ -2,8 +2,8 @@ package com.vanniktech.espresso.core.utils;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 
 public final class CurrentItemMatcherActivity extends Activity {
   static final int VIEW_ID = 1234;

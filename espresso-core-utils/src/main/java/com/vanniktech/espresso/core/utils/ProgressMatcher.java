@@ -1,7 +1,7 @@
 package com.vanniktech.espresso.core.utils;
 
-import android.support.annotation.CheckResult;
-import android.support.test.espresso.matcher.BoundedMatcher;
+import androidx.annotation.CheckResult;
+import androidx.test.espresso.matcher.BoundedMatcher;
 import android.view.View;
 import android.widget.ProgressBar;
 import org.hamcrest.Description;

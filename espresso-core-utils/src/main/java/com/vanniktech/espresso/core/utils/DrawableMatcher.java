@@ -1,9 +1,9 @@
 package com.vanniktech.espresso.core.utils;
 
 import android.graphics.drawable.Drawable;
-import android.support.annotation.CheckResult;
-import android.support.annotation.DrawableRes;
-import android.support.test.espresso.matcher.BoundedMatcher;
+import androidx.annotation.CheckResult;
+import androidx.annotation.DrawableRes;
+import androidx.test.espresso.matcher.BoundedMatcher;
 import android.view.View;
 import android.widget.ImageView;
 import org.hamcrest.Description;

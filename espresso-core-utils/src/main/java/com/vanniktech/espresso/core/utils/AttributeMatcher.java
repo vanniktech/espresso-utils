@@ -1,12 +1,12 @@
 package com.vanniktech.espresso.core.utils;
 
 import android.graphics.Color;
-import android.support.annotation.AttrRes;
-import android.support.annotation.CheckResult;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
-import android.support.annotation.Nullable;
-import android.support.test.espresso.matcher.BoundedMatcher;
+import androidx.annotation.AttrRes;
+import androidx.annotation.CheckResult;
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.Nullable;
+import androidx.test.espresso.matcher.BoundedMatcher;
 import android.view.View;
 import android.widget.TextView;
 import org.hamcrest.Description;
