@@ -1,11 +1,11 @@
 package com.vanniktech.espresso.core.utils;
 
 import android.content.Context;
-import android.support.annotation.CheckResult;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.CheckResult;
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import static com.vanniktech.espresso.core.utils.Utils.checkNotNull;
 

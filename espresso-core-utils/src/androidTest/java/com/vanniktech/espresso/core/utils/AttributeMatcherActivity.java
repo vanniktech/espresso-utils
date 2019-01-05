@@ -1,9 +1,9 @@
 package com.vanniktech.espresso.core.utils;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public final class AttributeMatcherActivity extends AppCompatActivity {
   static final int VIEW_ID = 1234;

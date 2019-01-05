@@ -2,9 +2,9 @@ package com.vanniktech.espresso.core.utils;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
 import android.widget.TextView;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import com.vanniktech.espresso.core.utils.test.R;
 
 public final class HintTextColorMatcherActivity extends Activity {
