@@ -24,7 +24,7 @@ buildscript {
     ],
     'test': [
       'privateconstructor': 'com.pushtorefresh.java-private-constructor-checker:checker:1.2.0',
-      'junit': 'junit:junit:4.12',
+      'junit': 'junit:junit:4.13-beta-1',
       'assertj3': 'org.assertj:assertj-core:3.11.1',
     ],
   ]
