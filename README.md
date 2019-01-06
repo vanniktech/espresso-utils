@@ -6,7 +6,7 @@ Provides helper methods for asserting a few things that Espresso does not suppor
 # Espresso Core Utils
 
 ```groovy
-androidTestImplementation 'com.vanniktech:espresso-core-utils:0.2.0'
+androidTestImplementation 'com.vanniktech:espresso-core-utils:0.3.0'
 ```
 
 ### Snapshots
@@ -36,25 +36,6 @@ appendText(String text)
 All of those are ViewMatchers that can be placed inside the `matches` function. `onView(withId(R.id.view)).check(matches(...));`
 
 ```java
-withAttrRes(@AttrRes int attr, @ColorRes int colorRes)
-withAttr(@AttrRes int attr, @ColorInt int color)
-withAttr(@AttrRes int attr, String color)
-withColorAccentRes(@ColorRes int colorRes)
-withColorAccent(@ColorInt int color)
-withColorAccent(String color)
-withColorButtonNormalRes(@ColorRes int colorRes)
-withColorButtonNormal(@ColorInt int color)
-withColorButtonNormal(String color)
-withCurrentItem(int currentItem)
-withDrawable(@DrawableRes int resourceId)
-withNoDrawable()
-withHintTextColorRes(@ColorRes int colorRes)
-withHintTextColor(@ColorInt int color)
-withHintTextColor(String color)
-withProgress(int progress)
-withTextColorRes(@ColorRes int colorRes)
-withTextColor(@ColorInt int color)
-withTextColor(String color)
 withTextViewDrawableLeft(@DrawableRes int resourceId)
 withNoTextViewDrawableLeft()
 withTextViewDrawableRelativeLeft(@DrawableRes int resourceId)
@@ -71,6 +52,25 @@ withTextViewDrawableBottom(@DrawableRes int resourceId)
 withNoTextViewDrawableBottom()
 withTextViewDrawableRelativeBottom(@DrawableRes int resourceId)
 withNoTextViewDrawableRelativeBottom()
+withProgress(int progress)
+withDrawable(@DrawableRes int resourceId)
+withNoDrawable()
+withAttrRes(@AttrRes int attr, @ColorRes int colorRes)
+withAttr(@AttrRes int attr, @ColorInt int color)
+withAttr(@AttrRes int attr, String color)
+withColorAccentRes(@ColorRes int colorRes)
+withColorAccent(@ColorInt int color)
+withColorAccent(String color)
+withColorButtonNormalRes(@ColorRes int colorRes)
+withColorButtonNormal(@ColorInt int color)
+withColorButtonNormal(String color)
+withHintTextColorRes(@ColorRes int colorRes)
+withHintTextColor(@ColorInt int color)
+withHintTextColor(String color)
+withCurrentItem(int currentItem)
+withTextColorRes(@ColorRes int colorRes)
+withTextColor(@ColorInt int color)
+withTextColor(String color)
 ```
 
 There's more documentation available in the Javadoc. Also have a look at the [tests](espresso-core-utils/src/androidTest/java/com/vanniktech/espresso/core/utils) for further usages.

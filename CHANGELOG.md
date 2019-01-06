@@ -1,7 +1,19 @@
 # Change Log
 
-Version 0.3.0 *(In development)*
---------------------------------
+Version 0.3.0 *(2019-01-06)*
+----------------------------
+
+- Upgrade to AndroidX. [\#52](https://github.com/vanniktech/espresso-utils/pull/52) ([vanniktech](https://github.com/vanniktech))
+- Remove sudo: false from travis config. [\#50](https://github.com/vanniktech/espresso-utils/pull/50) ([vanniktech](https://github.com/vanniktech))
+- Use Gradle Maven Publish Plugin for publishing. [\#48](https://github.com/vanniktech/espresso-utils/pull/48) ([vanniktech](https://github.com/vanniktech))
+- SetProgressAction to set the progress of a ProgressBar. [\#47](https://github.com/vanniktech/espresso-utils/pull/47) ([vanniktech](https://github.com/vanniktech))
+- Remove Code Quality Tools for Kotlin as there's no Kotlin in here. [\#46](https://github.com/vanniktech/espresso-utils/pull/46) ([vanniktech](https://github.com/vanniktech))
+- Nuke badges in README. [\#45](https://github.com/vanniktech/espresso-utils/pull/45) ([vanniktech](https://github.com/vanniktech))
+- Update README and add Java documentation to all classes. [\#44](https://github.com/vanniktech/espresso-utils/pull/44) ([vanniktech](https://github.com/vanniktech))
+- Tweak Travis configuration. [\#41](https://github.com/vanniktech/espresso-utils/pull/41) ([vanniktech](https://github.com/vanniktech))
+- Unify Detekt configurations with RC6. [\#31](https://github.com/vanniktech/espresso-utils/pull/31) ([vanniktech](https://github.com/vanniktech))
+- Increase testing coverage. [\#24](https://github.com/vanniktech/espresso-utils/pull/24) ([vanniktech](https://github.com/vanniktech))
+- Increase testing coverage. [\#22](https://github.com/vanniktech/espresso-utils/pull/22) ([vanniktech](https://github.com/vanniktech))
 
 Version 0.2.0 *(2017-08-20)*
 ----------------------------
