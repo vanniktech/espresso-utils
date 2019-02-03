@@ -13,5 +13,6 @@
     <activity android:name=".AttributeMatcherActivity"
         android:theme="@style/AttributeMatcher"/>
     <activity android:name=".TextViewDrawableMatcherActivity"/>
+    <activity android:name=".ViewIndexMatcherActivity"/>
   </application>
 </manifest>
