@@ -37,12 +37,12 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.vanniktech:gradle-code-quality-tools-plugin:0.15.0'
-    classpath 'com.vanniktech:gradle-android-junit-jacoco-plugin:0.13.0'
+    classpath 'com.vanniktech:gradle-code-quality-tools-plugin:0.20.0'
+    classpath 'com.vanniktech:gradle-android-junit-jacoco-plugin:0.16.0'
 
-    classpath 'com.android.tools.build:gradle:3.2.1'
+    classpath 'com.android.tools.build:gradle:4.2.1'
     classpath 'com.github.ben-manes:gradle-versions-plugin:0.20.0'
-    classpath 'com.vanniktech:gradle-maven-publish-plugin:0.6.0'
+    classpath 'com.vanniktech:gradle-maven-publish-plugin:0.16.0'
   }
 }
 
@@ -58,6 +58,9 @@ codeQualityTools {
   }
   errorProne {
     toolVersion = '2.1.2'
+  }
+  cpd {
+    enabled = false
   }
 }
 
@@ -79,6 +82,6 @@ ext {
 }
 
 wrapper {
-  gradleVersion = '4.10.3'
+  gradleVersion = '6.8.3'
   distributionType = Wrapper.DistributionType.ALL
 }

@@ -1,5 +1,6 @@
 package com.vanniktech.espresso.core.utils;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
@@ -7,7 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 public final class ViewIndexMatcherActivity extends Activity {
-  @Override protected void onCreate(@Nullable final Bundle savedInstanceState) {
+  @Override @SuppressLint("SetTextI18n") protected void onCreate(@Nullable final Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     final TextView textView1 = new TextView(this);
