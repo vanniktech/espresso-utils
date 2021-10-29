@@ -10,7 +10,7 @@ import org.hamcrest.Matcher;
 import static androidx.test.espresso.action.ViewActions.actionWithAssertions;
 import static androidx.test.espresso.matcher.ViewMatchers.isAssignableFrom;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static org.hamcrest.core.AllOf.allOf;
+import static org.hamcrest.Matchers.allOf;
 
 public final class SetProgressAction implements ViewAction {
   /**
