@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-  androidTestImplementation 'com.vanniktech:espresso-core-utils:0.4.0-SNAPSHOT'
+  androidTestImplementation 'com.vanniktech:espresso-core-utils:0.5.0-SNAPSHOT'
 }
 ```
 
