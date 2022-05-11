@@ -73,9 +73,6 @@ ext {
   minSdkVersion = 15
   compileSdkVersion = 31
   targetSdkVersion = 31
-
-  versionCode = VERSION_CODE
-  versionName = VERSION_NAME
 }
 
 wrapper {

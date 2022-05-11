@@ -1,7 +1,12 @@
 # Change Log
 
-Version 0.4.0 *(In development)*
---------------------------------
+Version 0.4.0 *(2022-05-11)*
+----------------------------
+
+- Fix allOf import which caused runtime crashes. [\#58](https://github.com/vanniktech/espresso-utils/pull/58) ([vanniktech](https://github.com/vanniktech))
+- Update dependencies. [\#57](https://github.com/vanniktech/espresso-utils/pull/57) ([vanniktech](https://github.com/vanniktech))
+- Switch to GitHub workflows. [\#55](https://github.com/vanniktech/espresso-utils/pull/55) ([vanniktech](https://github.com/vanniktech))
+- Add ViewIndexMatcher. [\#54](https://github.com/vanniktech/espresso-utils/pull/54) ([vanniktech](https://github.com/vanniktech))
 
 Version 0.3.0 *(2019-01-06)*
 ----------------------------

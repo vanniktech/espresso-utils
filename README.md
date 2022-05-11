@@ -6,7 +6,7 @@ Provides helper methods for asserting a few things that Espresso does not suppor
 # Espresso Core Utils
 
 ```groovy
-androidTestImplementation 'com.vanniktech:espresso-core-utils:0.3.0'
+androidTestImplementation 'com.vanniktech:espresso-core-utils:0.4.0'
 ```
 
 ### Snapshots
@@ -36,6 +36,7 @@ appendText(String text)
 All of those are ViewMatchers that can be placed inside the `matches` function. `onView(withId(R.id.view)).check(matches(...));`
 
 ```java
+appendText(String text)
 withTextViewDrawableLeft(@DrawableRes int resourceId)
 withNoTextViewDrawableLeft()
 withTextViewDrawableRelativeLeft(@DrawableRes int resourceId)
