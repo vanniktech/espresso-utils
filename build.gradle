@@ -22,7 +22,7 @@ buildscript {
       'privateconstructor': 'com.pushtorefresh.java-private-constructor-checker:checker:1.2.0',
       'junit': 'junit:junit:4.13.2',
       'assertj3': 'org.assertj:assertj-core:3.21.0',
-      'assertj2': 'org.assertj:assertj-core:2.9.0',
+      'assertj2': 'org.assertj:assertj-core:2.9.1',
     ],
   ]
 
