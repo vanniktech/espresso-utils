@@ -9,12 +9,6 @@ android {
 
     testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
   }
-
-  buildTypes {
-    debug {
-      testCoverageEnabled true
-    }
-  }
 }
 
 dependencies {
