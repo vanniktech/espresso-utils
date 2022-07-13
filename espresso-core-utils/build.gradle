@@ -8,7 +8,7 @@ apply plugin: 'com.android.library'
 licensee {
   allow("Apache-2.0")
   allow("EPL-1.0")
-  allowUrl("http://www.opensource.org/licenses/bsd-license.php") // https://github.com/cashapp/licensee/pull/99
+  allow("BSD-2-Clause")
 }
 
 dependencyGuard {
