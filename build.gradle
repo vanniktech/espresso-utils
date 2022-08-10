@@ -50,7 +50,7 @@ codeQualityTools {
     enabled = false
   }
   pmd {
-    toolVersion = '6.0.1'
+    enabled = false
   }
   cpd {
     enabled = false
