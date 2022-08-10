@@ -37,7 +37,6 @@ dependencies {
 }
 
 dependencies {
-  androidTestImplementation deps.test.assertj2
   androidTestImplementation deps.support.test.junitExt
   androidTestImplementation deps.support.test.runner
   androidTestImplementation deps.support.test.rules
