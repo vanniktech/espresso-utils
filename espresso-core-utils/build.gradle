@@ -34,8 +34,6 @@ dependencies {
 
 dependencies {
   testImplementation deps.test.junit
-  testImplementation deps.test.assertj3
-  testImplementation deps.test.privateconstructor
 }
 
 dependencies {
