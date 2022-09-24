@@ -20,7 +20,6 @@ buildscript {
     ],
     'test': [
       'junit': 'junit:junit:4.13.2',
-      'assertj2': 'org.assertj:assertj-core:2.9.1',
     ],
   ]
 

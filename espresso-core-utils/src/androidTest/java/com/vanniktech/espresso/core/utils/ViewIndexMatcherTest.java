@@ -13,8 +13,8 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.withTagValue;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static com.vanniktech.espresso.core.utils.ViewIndexMatcher.withIndex;
-import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.junit.Assert.fail;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(AndroidJUnit4.class) public final class ViewIndexMatcherTest {
   @Rule public final ActivityTestRule<ViewIndexMatcherActivity> activityTestRule = new ActivityTestRule<>(ViewIndexMatcherActivity.class);
@@ -29,7 +29,7 @@ import static org.junit.Assert.fail;
       onView(withIndex(withText("Test"), 2)).check(matches(withTagValue(Matchers.<Object>equalTo(1))));
       fail();
     } catch (final NoMatchingViewException e) {
-      assertThat(e).hasMessageStartingWith("No views in hierarchy found matching: with index: <2> with text: is \"Test\"");
+      assertEquals(true, e.getMessage().startsWith("No views in hierarchy found matching: with index: <2> with text: is \"Test\""));
     }
   }
 }
