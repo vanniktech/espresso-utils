@@ -1,9 +1,4 @@
 buildscript {
-  ext.versions = [
-    espresso: '3.5.0',
-    testRules: '1.4.0',
-  ]
-
   ext.deps = [
     'support': [
       'annotations': 'androidx.annotation:annotation:1.5.0',
@@ -11,11 +6,11 @@ buildscript {
 
       'test': [
         'espresso': [
-          'core': "androidx.test.espresso:espresso-core:${versions.espresso}",
+          'core': "androidx.test.espresso:espresso-core:3.5.0",
         ],
         'junitExt': "androidx.test.ext:junit:1.1.4",
-        'runner': "androidx.test:runner:${versions.testRules}",
-        'rules': "androidx.test:rules:${versions.testRules}",
+        'runner': "androidx.test:runner:1.5.0",
+        'rules': "androidx.test:rules:1.5.0",
       ],
     ],
     'test': [
