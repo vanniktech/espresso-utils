@@ -74,7 +74,6 @@ import static com.vanniktech.espresso.core.utils.DrawableMatcherActivity.VIEW_ID
     });
   }
 
-  // Has to be package private because of https://github.com/pmd/pmd/issues/613.
   void setVisibility(final int visibility) throws Throwable {
     activityTestRule.runOnUiThread(new Runnable() {
       @Override public void run() {

@@ -1,16 +1,14 @@
 package com.vanniktech.espresso.core.utils;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.graphics.drawable.Drawable;
+import android.view.View;
+import android.widget.TextView;
 import androidx.annotation.CheckResult;
 import androidx.annotation.DrawableRes;
 import androidx.test.espresso.matcher.BoundedMatcher;
-import android.view.View;
-import android.widget.TextView;
 import org.hamcrest.Description;
 
-import static android.os.Build.VERSION_CODES.JELLY_BEAN_MR1;
 import static com.vanniktech.espresso.core.utils.TextViewDrawableMatcher.Type.DRAWABLE_BOTTOM;
 import static com.vanniktech.espresso.core.utils.TextViewDrawableMatcher.Type.DRAWABLE_LEFT;
 import static com.vanniktech.espresso.core.utils.TextViewDrawableMatcher.Type.DRAWABLE_RELATIVE_BOTTOM;
@@ -53,7 +51,7 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
    * <p>Example usage:</p>
    * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRelativeLeft(R.color.blue)));</code>
    */
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeLeft(@DrawableRes final int resourceId) {
+  @CheckResult public static TextViewDrawableMatcher withTextViewDrawableRelativeLeft(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_LEFT);
   }
 
@@ -63,7 +61,7 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
    * <p>Example usage:</p>
    * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRelativeLeft()));</code>
    */
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeLeft() {
+  @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableRelativeLeft() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_LEFT);
   }
 
@@ -93,7 +91,7 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
    * <p>Example usage:</p>
    * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRelativeTop(R.color.blue)));</code>
    */
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeTop(@DrawableRes final int resourceId) {
+  @CheckResult public static TextViewDrawableMatcher withTextViewDrawableRelativeTop(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_TOP);
   }
 
@@ -103,7 +101,7 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
    * <p>Example usage:</p>
    * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRelativeTop()));</code>
    */
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeTop() {
+  @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableRelativeTop() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_TOP);
   }
 
@@ -133,7 +131,7 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
    * <p>Example usage:</p>
    * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRelativeRight(R.color.blue)));</code>
    */
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeRight(@DrawableRes final int resourceId) {
+  @CheckResult public static TextViewDrawableMatcher withTextViewDrawableRelativeRight(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_RIGHT);
   }
 
@@ -143,7 +141,7 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
    * <p>Example usage:</p>
    * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRelativeRight()));</code>
    */
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeRight() {
+  @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableRelativeRight() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_RIGHT);
   }
 
@@ -173,7 +171,7 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
    * <p>Example usage:</p>
    * <code>onView(withId(R.id.view)).check(matches(withTextViewDrawableRelativeBottom(R.color.blue)));</code>
    */
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withTextViewDrawableRelativeBottom(@DrawableRes final int resourceId) {
+  @CheckResult public static TextViewDrawableMatcher withTextViewDrawableRelativeBottom(@DrawableRes final int resourceId) {
     return new TextViewDrawableMatcher(resourceId, DRAWABLE_RELATIVE_BOTTOM);
   }
 
@@ -183,7 +181,7 @@ public final class TextViewDrawableMatcher extends BoundedMatcher<View, TextView
    * <p>Example usage:</p>
    * <code>onView(withId(R.id.view)).check(matches(withNoTextViewDrawableRelativeBottom()));</code>
    */
-  @CheckResult @TargetApi(JELLY_BEAN_MR1) public static TextViewDrawableMatcher withNoTextViewDrawableRelativeBottom() {
+  @CheckResult public static TextViewDrawableMatcher withNoTextViewDrawableRelativeBottom() {
     return new TextViewDrawableMatcher(NO_DRAWABLE, DRAWABLE_RELATIVE_BOTTOM);
   }
 
