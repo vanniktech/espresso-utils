@@ -51,7 +51,7 @@ public final class AttributeMatcher extends BoundedMatcher<View, TextView> {
    * <code>onView(withId(R.id.view)).check(matches(withColorAccentRes(R.color.green)));</code>
    */
   @CheckResult public static AttributeMatcher withColorAccentRes(@ColorRes final int colorRes) {
-    return new AttributeMatcher(R.attr.colorAccent, "colorAccent", ColorChecker.fromRes(colorRes));
+    return new AttributeMatcher(android.R.attr.colorAccent, "colorAccent", ColorChecker.fromRes(colorRes));
   }
 
   /**
@@ -61,7 +61,7 @@ public final class AttributeMatcher extends BoundedMatcher<View, TextView> {
    * <code>onView(withId(R.id.view)).check(matches(withColorAccent(GREEN)));</code>
    */
   @CheckResult public static AttributeMatcher withColorAccent(@ColorInt final int color) {
-    return new AttributeMatcher(R.attr.colorAccent, "colorAccent", ColorChecker.from(color));
+    return new AttributeMatcher(android.R.attr.colorAccent, "colorAccent", ColorChecker.from(color));
   }
 
   /**
@@ -81,7 +81,7 @@ public final class AttributeMatcher extends BoundedMatcher<View, TextView> {
    * <code>onView(withId(R.id.view)).check(matches(withColorButtonNormalRes(R.color.red)));</code>
    */
   @CheckResult public static AttributeMatcher withColorButtonNormalRes(@ColorRes final int colorRes) {
-    return new AttributeMatcher(R.attr.colorButtonNormal, "colorButtonNormal", ColorChecker.fromRes(colorRes));
+    return new AttributeMatcher(android.R.attr.colorButtonNormal, "colorButtonNormal", ColorChecker.fromRes(colorRes));
   }
 
   /**
@@ -91,7 +91,7 @@ public final class AttributeMatcher extends BoundedMatcher<View, TextView> {
    * <code>onView(withId(R.id.view)).check(matches(withColorButtonNormal(RED)));</code>
    */
   @CheckResult public static AttributeMatcher withColorButtonNormal(@ColorInt final int color) {
-    return new AttributeMatcher(R.attr.colorButtonNormal, "colorButtonNormal", ColorChecker.from(color));
+    return new AttributeMatcher(android.R.attr.colorButtonNormal, "colorButtonNormal", ColorChecker.from(color));
   }
 
   /**

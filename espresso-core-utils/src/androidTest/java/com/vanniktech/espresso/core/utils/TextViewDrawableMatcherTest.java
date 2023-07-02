@@ -1,6 +1,5 @@
 package com.vanniktech.espresso.core.utils;
 
-import android.annotation.TargetApi;
 import androidx.annotation.DrawableRes;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
@@ -11,7 +10,6 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 
-import static android.os.Build.VERSION_CODES.JELLY_BEAN_MR1;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
@@ -33,7 +31,7 @@ import static com.vanniktech.espresso.core.utils.TextViewDrawableMatcher.withTex
 import static com.vanniktech.espresso.core.utils.TextViewDrawableMatcher.withTextViewDrawableRight;
 import static com.vanniktech.espresso.core.utils.TextViewDrawableMatcher.withTextViewDrawableTop;
 
-@RunWith(AndroidJUnit4.class) @TargetApi(JELLY_BEAN_MR1) @SuppressWarnings("PMD.GodClass") public final class TextViewDrawableMatcherTest {
+@RunWith(AndroidJUnit4.class) public final class TextViewDrawableMatcherTest {
   @Rule public final ExpectedException expectedException = ExpectedException.none();
 
   @Rule public final ActivityTestRule<TextViewDrawableMatcherActivity> activityTestRule = new ActivityTestRule<>(TextViewDrawableMatcherActivity.class);
