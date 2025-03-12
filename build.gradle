@@ -2,7 +2,7 @@ buildscript {
   ext.deps = [
     'support': [
       'annotations': 'androidx.annotation:annotation:1.9.1',
-      'appCompat': 'androidx.appcompat:appcompat:1.6.1',
+      'appCompat': 'androidx.appcompat:appcompat:1.7.0',
 
       'test': [
         'espresso': [
