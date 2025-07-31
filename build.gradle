@@ -8,7 +8,7 @@ buildscript {
         'espresso': [
           'core': "androidx.test.espresso:espresso-core:3.5.1",
         ],
-        'junitExt': "androidx.test.ext:junit:1.2.1",
+        'junitExt': "androidx.test.ext:junit:1.3.0",
         'runner': "androidx.test:runner:1.6.2",
         'rules': "androidx.test:rules:1.6.1",
       ],
